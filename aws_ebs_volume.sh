@@ -42,7 +42,7 @@ else
 	echo "No need to create FS, ready to mount"
 fi
 
-MOUNT_POINT="/mnt/data"
+MOUNT_POINT="/ebs/data"
 
 echo "Ensure mount point $MOUNT_POINT exists"
 sudo mkdir -p "$MOUNT_POINT"
@@ -66,5 +66,5 @@ else
 	echo "Mount point detected - ready to use"
 fi
 
-
+echo "DONE"
 
